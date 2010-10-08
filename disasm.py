@@ -43,7 +43,7 @@ def main(filename):
             RA = (val >> 8)  & 0x0F 
             RB = (val >> 4) & 0x0F
             RD = (val) & 0x0F
-            print "%03i %s %s %-6s 0x%02x 0x%02x 0x%02x" % (idx, line, bin,op(bin[:4]),RA,RB,RD)
+            print "0x%02x %s %s %-6s 0x%02x 0x%02x 0x%02x" % (idx, line, bin,op(bin[:4]),RA,RB,RD)
 
 
 

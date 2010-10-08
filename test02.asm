@@ -7,11 +7,11 @@
 	.define author  "(c)2007 Colin MacKenzie"
 	.define url     "http://www.colinmackenzie.net" 
 	
-	.register r4 x
-	.register r5 y
+	.register r0 x
+	.register r1 y
 	.register r2 lc		# our loop counter
-	.register r3 dec	# our loop decrement value
-
+	.register r4 dec	# our loop decrement value
+    .register r5 ret
 	.base	0x0c	# place this subroutine at mem addr 0x0c
 test_sub:
 	LRI	dec, 3
@@ -34,7 +34,7 @@ loop:
 
 	LRI	x, 4
 	SUB	y, x, y
-	CALL	test_sub, r15
+	CALL	test_sub, ret
 	HALT
 
 	.end
