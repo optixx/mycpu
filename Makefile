@@ -90,7 +90,7 @@ parser.h : scanner.l
 
 scanner.o : scanner.c
 
-parser.o : parser.c
+parser.o : parser.w
 
 parser.c : scanner.c
 
@@ -106,5 +106,5 @@ scanner.o: scanner.c parser.h yfasm.h
 
 
 sim:
-	iverilog  testbench.v yfcpu.v  -o test.vvp
+	iverilog -o test.vvp testbench.v yfcpu.v
 	vvp test.vvp
