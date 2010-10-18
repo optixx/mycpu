@@ -205,7 +205,7 @@ void out_fmt_hex()
 	
 	/* output the instruction memory buffer as hex ints */
 	for(int i = 0; i<codesize; i++)
-		printf("%04x\n", lpimem[i] & imask );
+		printf("%08x\n", lpimem[i] & imask );
 }
 
 void out_fmt_hex_waddr(int ipl)

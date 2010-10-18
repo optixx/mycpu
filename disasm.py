@@ -37,12 +37,17 @@ def b(v,bits=16):
 def main(filename):
     data = open(filename,"r").read().split("\n")
     for idx,line in enumerate(data):
-        if re.compile("[a-zA-Z0-9]{4}").search(line):
+        if re.compile("^[abcdefABCDEF0-9]{4,8}$").search(line):
             val = int(line,16)
-            bin =  b(val)
+            bin =  b(val,28)
             RA = (val >> 8)  & 0x0F 
             RB = (val >> 4) & 0x0F
             RD = (val) & 0x0F
+
+            RA = (val >> 16)  & 0xff 
+            RB = (val >> 8) & 0xff
+            RD = (val) & 0xff
+            
             print "0x%02x %s %s %-6s 0x%02x 0x%02x 0x%02x" % (idx, line, bin,op(bin[:4]),RA,RB,RD)
 
 

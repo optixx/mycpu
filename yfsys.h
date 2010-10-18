@@ -4,12 +4,12 @@
  */
 
 /* default system parameters */
-#define DEF_IMEM		256
+#define DEF_IMEM		    256
 #define DEF_IMEM_WIDTH		32
-#define DEF_REGFILE		16
+#define DEF_REGFILE		    16
 #define DEF_OPCODE_WIDTH	4
-#define DEF_REG_ADDR_WIDTH	4
-#define DEF_BASE		0
+#define DEF_REG_ADDR_WIDTH	8
+#define DEF_BASE		    0
 
 
 /* mnemonic opcode values */
@@ -17,7 +17,7 @@
 #define xLRI	0x1
 #define xADD	0x4
 #define xSUB	0x5
-#define xOR	0x6
+#define xOR	    0x6
 #define xXOR	0x7
 #define xBRA	0x8
 #define xBRANZ	0x9

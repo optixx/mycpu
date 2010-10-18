@@ -59,7 +59,7 @@ $(PROGRAM): $(OBJECTS)
 
 clean:
 	@echo "Deleting temporary files..."
-	@rm -f *~ "#*" $(OBJECTS) Makefile.last parser.c parser.h scanner.c
+	@rm -f *~ "#*" $(OBJECTS) Makefile.last parser.c parser.h scanner.c yfasm 
 
 rebuild:
 	@echo "Deleting intermediate files..."
@@ -94,9 +94,12 @@ parser.o : parser.c
 
 parser.c : scanner.c
 
+sim:
+	iverilog -o test.vvp testbench.v yfcpu.v	
+	vvp test.vvp
 ##################### EVERYTHING BELOW THIS LINE IS SUBJECT TO SUDDEN DEATH...
 #
-# dependencies generated on:  Tue Mar 6 13:17:32 AST 2007
+# dependencies generated on:  Mon Oct 18 22:07:55 CEST 2010
 #
 main.o: main.c yfasm.h
 
@@ -104,7 +107,3 @@ parser.o: parser.c yfasm.h yfsys.h
 
 scanner.o: scanner.c parser.h yfasm.h
 
-
-sim:
-	iverilog -o test.vvp testbench.v yfcpu.v
-	vvp test.vvp

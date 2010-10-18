@@ -5,7 +5,7 @@
 
 #include "yfasm.h"
 
-int output_symbols = 0;
+int output_symbols = 1;
 
 
 int yyparse();

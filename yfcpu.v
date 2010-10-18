@@ -13,7 +13,7 @@ module yfcpu(clk, rst, PC);
 
 // our cpu core parameters
 parameter im_size = 8;		// 2^n instruction word memory
-parameter rf_size = 4;		// 2^n word register file
+parameter rf_size = 8;		// 2^n word register file
 
 // a parameter for the bus width of our cpu
 parameter bw = 8;
