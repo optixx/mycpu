@@ -90,7 +90,7 @@ parser.h : scanner.l
 
 scanner.o : scanner.c
 
-parser.o : parser.w
+parser.o : parser.c
 
 parser.c : scanner.c
 
