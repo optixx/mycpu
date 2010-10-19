@@ -1,8 +1,7 @@
 *.o
 *.vcd
 *.vvp
-*parser.h
-*parser.c  
+parser.h
+parser.c
 scanner.c
-
-
+yfasm
