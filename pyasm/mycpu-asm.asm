@@ -27,6 +27,7 @@ ADD	(r2, r1, r2)
 SUB	(r3, r4, r3)
 NOP()
 BRALNZ (loop, r3)
+
 LRI	(4,r1)
 SUB	(r2, r1, r2)
 CALL (test_sub, r15)

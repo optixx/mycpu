@@ -1,8 +1,8 @@
 # YourFirstCPU test asm program
 
 	# tell the assembler details about our cpu system configuration
-	.imem	 256 16	# instruction memory size is 256 words with 16 bits/instruction
-	.regfile 16 4	# regfile has 16 registers with 4 bit addresses
+	.imem	 256 28	# instruction memory size is 256 words with 16 bits/instruction
+	.regfile 16 8	# regfile has 16 registers with 4 bit addresses
 
 	.define author  "(c)2007 Colin MacKenzie"
 	.define url     "http://www.colinmackenzie.net" 
