@@ -128,7 +128,7 @@ class OP0(ASM):
         ASM.__init__(self) 
     def _genbits(self): 
         print self.name
-        return 0
+        return 0L
         
 class OP1(ASM): 
     def __init__(self, dest):

@@ -31,10 +31,10 @@ loop:
 	SUB	lc, dec, lc
 	NOP
 	BRALNZ	loop, lc
+	BRANZ	dec, lc
 
 	LRI	x, 4
 	SUB	y, x, y
-	CALL	test_sub, ret
 	HALT
 
 	.end
