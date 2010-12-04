@@ -14,13 +14,3 @@
 05020402
 08000f00
 
-Symbol Table:
-           author  STRING     "(c)2007 Colin MacKenzie"
-              url  STRING     "http://www.colinmackenzie.net"
-                x  REGISTER   r1
-                y  REGISTER   r2
-               lc  REGISTER   r3
-              dec  REGISTER   r4
-         test_sub  LABEL      0x0000000c
-            reset  LABEL      0x00000000
-             loop  LABEL      0x00000004
