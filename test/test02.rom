@@ -1,0 +1,27 @@
+01000b01
+01000300
+01000104
+01000a02
+04010001
+05020402
+00000000
+0b020400
+09040500
+01000400
+05010001
+0f000fff
+01000304
+05010401
+08000f00
+
+Symbol Table:
+           author  STRING     "(c)2007 Colin MacKenzie"
+              url  STRING     "http://www.colinmackenzie.net"
+                x  REGISTER   r0
+                y  REGISTER   r1
+               lc  REGISTER   r2
+              dec  REGISTER   r4
+              ret  REGISTER   r5
+         test_sub  LABEL      0x0000000c
+            reset  LABEL      0x00000000
+             loop  LABEL      0x00000004
